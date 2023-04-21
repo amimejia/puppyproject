@@ -33,8 +33,9 @@ public class App
 
     //creating an ArrayList object that will store objects
     ArrayList<dogfood> dogfoods = new ArrayList<dogfood>();
-    //A loop that instantiates at least five objects and adds them to the ArrayList
     dogfood nextdogfood = new dogfood();
+    //A loop that instantiates at least five objects and adds them to the ArrayList
+    
     //A loop that prints out the attributes of each object in the ArrayList
     for (int i = 0; i <=5; i++) {
         dogfoods.add(nextdogfood);

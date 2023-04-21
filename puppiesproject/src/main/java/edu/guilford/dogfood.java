@@ -36,5 +36,10 @@ public dogfood() {
     public double getAverageprice() {
         return averageprice;
     }
-    
+    //toString
+    @Override
+    public String toString() {
+        return "dogfood [averageprice=" + averageprice + ", dry=" + dry + ", generic=" + generic + ", nutritionrating="
+                + nutritionrating + "]";
+    }
 }
