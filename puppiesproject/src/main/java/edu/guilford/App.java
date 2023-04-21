@@ -1,5 +1,8 @@
 package edu.guilford;
 
+import java.util.Random;
+import java.util.ArrayList;
+
 /**
  * These are some puppies made through a puppy class!
  *
@@ -19,13 +22,24 @@ public class App
     System.out.println(puppy2.toString());
     System.out.println(puppy3.toString());
     
-    //different puppies doing different things
+    //different puppies saying different things
     System.out.println(puppy1.getName()+ " says");
     puppy1.bark();
     System.out.println(puppy2.getName()+ " says");
     puppy2.eat();
     System.out.println(puppy3.getName()+ " says");
     puppy3.cuddle();
+
+
+    //creating an ArrayList object that will store objects
+    ArrayList<dogfood> dogfoods = new ArrayList<dogfood>();
+    //A loop that instantiates at least five objects and adds them to the ArrayList
+    dogfood nextdogfood = new dogfood();
+    //A loop that prints out the attributes of each object in the ArrayList
+    for (int i = 0; i <=5; i++) {
+        dogfoods.add(nextdogfood);
+        System.out.println(dogfoods.get(i));
+    }
 
     //set the attributes
     //puppy1.setName("Carrot");
